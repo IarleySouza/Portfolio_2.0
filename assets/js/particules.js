@@ -1,4 +1,5 @@
-particlesJS("particles-js", {
+
+  particlesJS("particles-js", {
     particles: {
       number: { value: 80, density: { enable: true, value_area: 800 } },
       color: { value: "#ffffff" },
@@ -53,14 +54,18 @@ particlesJS("particles-js", {
     },
     retina_detect: true
   });
+
+  // Stats.js
   var count_particles, stats, update;
   stats = new Stats();
-  stats.setMode(0);
+  stats.setMode(0); // 0: FPS, 1: MS
   stats.domElement.style.position = "absolute";
   stats.domElement.style.left = "0px";
   stats.domElement.style.top = "0px";
   document.body.appendChild(stats.domElement);
+
   count_particles = document.querySelector(".js-count-particles");
+  
   update = function () {
     stats.begin();
     stats.end();
@@ -69,5 +74,6 @@ particlesJS("particles-js", {
     }
     requestAnimationFrame(update);
   };
-  requestAnimationFrame(update);
   
+  requestAnimationFrame(update);
+

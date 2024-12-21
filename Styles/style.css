@@ -20,11 +20,11 @@
     box-sizing: border-box;
 }
 
-
+/* 
 canvas {
     display: block;
     vertical-align: bottom;
-}
+} */
 
 /* ---- particles.js container ---- */
 #particles-js {
@@ -60,7 +60,6 @@ canvas {
 
 #stats,
 .count-particles {
-    -webkit-user-select: none;
     margin-top: 5px;
     margin-left: 5px;
 }
@@ -76,7 +75,6 @@ canvas {
 
 
 :root {
-    --font-grande: 'TT Hoves Pro Trial', sans-serif;
     --font-pequena: 'Poppins', sans-serif;
     --color-black: #000;
     --color-gray1: #3d4143;
@@ -531,7 +529,6 @@ a {
 }
 
 .headline-scroll span {
-    font-family: var(--font-grande);
     font-size: 5rem;
     text-transform: uppercase;
     display: flex;
@@ -560,7 +557,7 @@ a {
     position: relative;
     top: 30%;
     width: 100%;
-    height: 70%;
+    height: auto;
     display: flex;
 }
 
@@ -572,7 +569,7 @@ a {
 .left-sobre {
     color: var(--color-white);
     height: 100%;
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -582,7 +579,6 @@ a {
 
 .textos-sobre h1 {
     font-size: 3rem;
-    font-family: var(--font-grande);
 }
 
 .textos-sobre p {
@@ -615,7 +611,7 @@ a {
 
 .right-sobre {
     height: 100%;
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -685,7 +681,6 @@ a {
 }
 
 .text-headline-skills h2 {
-    font-family: var(--font-grande);
     font-size: 3rem;
 }
 
@@ -699,7 +694,6 @@ a {
 
 .conteudo-skills {
     display: flex;
-    flex-wrap: wrap;
     gap: 2rem;
     margin: auto;
     width: 100%;
@@ -710,6 +704,7 @@ a {
     border-radius: 20px;
     color: var(--color-white);
     display: flex;
+    width: auto ;
     flex-direction: column;
     justify-content: center;
     height: 450px;
@@ -788,7 +783,7 @@ a {
     width: 50%;
     font-size: 8vw;
     font-weight: lighter;
-    font-family: var(--font-grande);
+
 }
 
 .descricao-servicos {
@@ -867,7 +862,6 @@ a {
     align-items: center;
     justify-content: center;
     padding: 1rem 1rem;
-    font-family: var(--font-grande);
 }
 
 .container-free-your-mind {
@@ -945,7 +939,6 @@ a {
     width: 50%;
     font-size: 8vw;
     font-weight: lighter;
-    font-family: var(--font-grande);
 }
 
 .headline-portfolio .descricao {
@@ -1120,7 +1113,6 @@ a {
     width: 50%;
     font-size: 8vw;
     font-weight: lighter;
-    font-family: var(--font-grande);
 }
 
 .descricao-contato {
