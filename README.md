@@ -13,25 +13,11 @@
 
 1. **Clone o Repositório**
    ```bash
-   git clone https://github.com/SEU_USUARIO/landing-page-portfolio-tiktok.git
+   git clone link
    ```
 
 2. **Abra no seu editor de código (VS Code, Sublime, etc.).**
 
-3. **Edite o conteúdo**
-   - Substitua as imagens, textos e informações pessoais nas respectivas seções do código.
-
-4. **Hospede seu portfólio**
-   - O site é estático, então pode ser hospedado facilmente em plataformas como Netlify, Vercel ou GitHub Pages.
-
-## 🎨 Personalização
-
-Você pode personalizar todas as seções do template:
-- **Início:** Adicione seu nome, título e uma chamada para ação.
-- **Sobre:** Adicione uma descrição sobre você, suas habilidades e seus perfis de redes sociais.
-- **Serviços:** Inclua os serviços que você oferece.
-- **Portfólio:** Adicione seus trabalhos, clientes anteriores ou cases de sucesso.
-- **Contato:** Ofereça opções para clientes entrarem em contato.
 
 ## 🔧 Tecnologias Utilizadas
 
