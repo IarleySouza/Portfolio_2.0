@@ -1,6 +1,18 @@
-/******************** Fontes usadas */
-@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
-@import url('clash-grotesk.css');
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins-Regular.ttf') format('truetype'),
+        url('/assets/fonts/Poppins-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype'),
+        url('/assets/fonts/Poppins-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -352,11 +364,13 @@ a {
     font-size: clamp(1rem, 2.5vw + .8rem, 3rem);
     font-family: 'Poppins';
     font-weight: 400;
-    
+
 }
+
 .titulo-inicio h1 {
     font-weight: bold;
 }
+
 .titulo-inicio p {
     font-size: 0.5em;
     width: 60%;
@@ -390,7 +404,7 @@ a {
 
 .cta span {
     font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
-    
+
 }
 
 .cta:before {
@@ -549,6 +563,7 @@ a {
     height: 70%;
     display: flex;
 }
+
 .destaque-quemsoueu {
     color: #FF5800;
     font-weight: 700;
