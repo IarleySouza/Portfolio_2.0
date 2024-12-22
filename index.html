@@ -82,7 +82,7 @@
                     </button>
                 </div>
                 <div class="complemento-inicio">
-                    <img class="qr-code" src="assets/img/qr_code_rmdeveloper.png" alt="qr code para seu link bio">
+                    <img class="qr-code" src="assets/img/qr-code.png" alt="qr code para o link bio">
                 </div>
             </div>
         </main>
@@ -117,6 +117,7 @@
                             </h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quod quis nemo
                                 provident dignissimos.</p>
+                                <button class="bnt">Baixar cv</button>
                         </div>
                         <!-- <div class="redes-sociais">
                             <a href="#">INSTAGRAM<i class="bi bi-arrow-right"></i></a>
@@ -387,6 +388,16 @@
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/slideSobre.js"></script>
     <script src="assets/js/slidePortfolio.js"></script>
+    <script>
+        document.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled"); // Adiciona a classe ao rolar
+            } else {
+                header.classList.remove("scrolled"); // Remove a classe se voltar ao topo
+            }
+        });
+    </script>
 </body>
 
 </html>

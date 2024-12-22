@@ -193,7 +193,7 @@ a {
 }
 
 /*************** HEADER *****/
-.header {
+header {
     user-select: none;
     position: fixed;
     top: 0;
@@ -203,8 +203,13 @@ a {
     align-items: center;
     justify-content: space-between;
     z-index: 99;
-    transition: top 0.3s ease-in-out;
+    background: transparent;
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
 
+}
+header.scrolled {
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
 }
 
 /* Logo */
@@ -726,9 +731,16 @@ a {
     line-height: 1.4;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 500px) {
     .conteudo-skills {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .titulo-inicio p {
+        font-size: 0.6em;
+        width: 100%;
+    }
+    .logo h1 {
+        font-size: 1.6em;
     }
 }
 
