@@ -74,7 +74,7 @@ canvas {
 
 :root {
     --font-pequena: 'Poppins', sans-serif;
-    --color-black: #000;
+    --color-black: #16181A;
     --color-gray1: #3d4143;
     --color-gray2: #9c9d9d;
     --color-white: #f6f6f6;
@@ -164,7 +164,17 @@ a {
 .fixed-button i {
     font-size: 24px;
 }
-
+.bnt {
+    margin-top: 30px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -370,10 +380,11 @@ header.scrolled {
 
 .titulo-inicio h1 {
     font-weight: bold;
+    font-size: 1.8em;
 }
 
 .titulo-inicio p {
-    font-size: 0.5em;
+    font-size: 17px;
     width: 60%;
     margin: auto;
 }
@@ -400,7 +411,7 @@ header.scrolled {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     border-radius: 50%;
-    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .cta span {
@@ -416,7 +427,7 @@ header.scrolled {
     display: block;
     border-radius: 50px;
     background: linear-gradient(90deg, #FF5800, #2a5f6b);
-    width: 100%;
+    width: 20%;
     height: 45px;
     transition: all 0.3s ease;
 }
@@ -483,13 +494,12 @@ header.scrolled {
 
 /*************** SOBRE *****/
 .sobre {
-    background-color: var(--color-black);
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
     z-index: 1;
     user-select: none;
     overflow: visible;
@@ -572,7 +582,7 @@ header.scrolled {
 .left-sobre {
     color: var(--color-white);
     height: 100%;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -581,15 +591,16 @@ header.scrolled {
 }
 
 .textos-sobre h1 {
-    font-size: 3rem;
+    font-size: 2em;
 }
 
 .textos-sobre p {
-    font-size: 1.5rem;
+    font-size: 1em;
     color: var(--color-gray2);
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.5;
     letter-spacing: 1.5px;
+    width: 60%;
 }
 
 .redes-sociais {
@@ -658,7 +669,7 @@ header.scrolled {
 
 /*************** SKILLS *****/
 .skills {
-    width: 100%;
+
     padding: 7rem 1rem;
     display: flex;
     align-items: center;
@@ -707,21 +718,19 @@ header.scrolled {
     border-radius: 20px;
     color: var(--color-white);
     display: flex;
-    width: auto ;
+    width: 300px;
     flex-direction: column;
     justify-content: center;
-    height: 450px;
+    height: 400px;
     padding: 2rem;
     gap: 1.5rem;
 }
-
-.box-skills i {
-    font-size: 4rem;
-    color: var(--color-white);
+.box-skills img {
+    width: 100px;
 }
 
 .box-skills h3 {
-    font-size: 1.8rem;
+    font-size: 1.2em;
 }
 
 .box-skills p {
@@ -752,8 +761,7 @@ header.scrolled {
 
 /*************** SERVIÇOS *****/
 .servicos {
-    background-color: var(--color-white);
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -762,7 +770,6 @@ header.scrolled {
 }
 
 .container-servicos {
-    background-color: var(--color-white);
     width: 100%;
     max-width: 1400px;
     height: 100%;
@@ -789,20 +796,13 @@ header.scrolled {
 }
 
 .titulo-servicos h1 {
-    color: var(--color-black);
+    color: var(--color-white);
     width: 50%;
     font-size: 8vw;
     font-weight: lighter;
 
 }
 
-.descricao-servicos {
-    width: 50%;
-    font-size: 2rem;
-    text-align: right;
-    line-height: 1.4;
-    letter-spacing: 1.5px;
-}
 
 .servicos-cards {
     width: 100%;
@@ -865,7 +865,6 @@ header.scrolled {
 
 /*************** ALGUMA FRASE AQUI  *****/
 .free-your-mind {
-    background-color: var(--color-white);
     width: 100vw;
     height: 100%;
     display: flex;
@@ -1090,7 +1089,6 @@ header.scrolled {
     padding: 2rem 0rem 3rem 0rem;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-white);
 }
 
 .container-contato {
@@ -1155,12 +1153,12 @@ header.scrolled {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    padding: 2rem 0rem 2rem 0rem;
-    margin-left: 20px;
+    padding: 2rem 0rem 2rem 3rem;
 }
 
 .formulario-contato h2 {
     font-size: 2rem;
+    color: var(--color-white);
 }
 
 .formulario-contato p {
@@ -1216,7 +1214,7 @@ header.scrolled {
     width: 50%;
     height: 100%;
     display: flex;
-    margin-right: 20px;
+    margin-right: 3rem;
     align-items: center;
     justify-content: right;
 }
