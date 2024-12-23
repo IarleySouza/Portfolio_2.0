@@ -940,13 +940,14 @@ header.scrolled {
 }
 
 .container-case {
-    width: 100%;
+
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8rem;
+    gap: 5rem;
+    padding: 1rem 5rem 1rem 3rem;
 }
 
 .case1,
@@ -957,12 +958,12 @@ header.scrolled {
     height: 70vh;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 7rem;
 }
 
 .imagens-case {
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1036,13 +1037,13 @@ header.scrolled {
 
 .conteudo-textos-case h1 {
     color: var(--color-white);
-    font-size: 6vw;
+    font-size: 3em;
     letter-spacing: 3px;
 }
 
 .conteudo-textos-case p {
     color: var(--color-gray2);
-    font-size: 1.5rem;
+    font-size: 16px;
     line-height: 1.4;
     letter-spacing: 1.5px;
     padding-bottom: 1.5rem;
