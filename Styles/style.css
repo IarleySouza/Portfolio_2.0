@@ -161,7 +161,7 @@ a {
 }
 .bnt {
     margin-top: 30px;
-    padding: 0.7rem 1.5rem;
+    padding: 1rem 1.6rem;
     cursor: pointer;
     border: none;
     outline: none;
@@ -169,6 +169,13 @@ a {
     background-color: #007bff;
     color: var(--color-white);
     font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.bnt:hover {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    transition: background-color 0.3s, transform 0.3s;
+    transform: translateY(-5px);
 }
 .bnt-2 {
     border: none;
@@ -211,12 +218,12 @@ a {
     justify-content: center;
 }
 
-/*************** HEADER *****/
+/***HEADER *****/
 header {
     user-select: none;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     padding: 2rem 1.2rem;
     display: flex;
     align-items: center;
@@ -227,8 +234,8 @@ header {
 
 }
 header.scrolled {
-    backdrop-filter: blur(10px); /* Efeito de desfoque */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo */
@@ -355,7 +362,7 @@ header.scrolled {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0rem 1rem;
+    /* padding: 0rem 1rem; */
     z-index: 1;
     user-select: none;
 }
@@ -384,7 +391,6 @@ header.scrolled {
     font-size: clamp(1rem, 2.5vw + .8rem, 3rem);
     font-family: 'Poppins';
     font-weight: 400;
-
 }
 
 .titulo-inicio h1 {
@@ -756,16 +762,17 @@ header.scrolled {
     }
     .titulo-inicio p {
         font-size: 0.6em;
-        width: 100%;
+        width: 90%;
     }
     .logo h1 {
         font-size: 1.6em;
     }
     .skills {
-        padding: 7rem 1rem;
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
     .box-skills {
         width: 80%;
@@ -1055,7 +1062,7 @@ header.scrolled {
 
 .conteudo-textos-case h1 {
     color: var(--color-white);
-    font-size: 3em;
+    font-size: 1.5em;
     letter-spacing: 3px;
 }
 
@@ -1323,4 +1330,50 @@ header.scrolled {
 
 .credits-column p {
     margin: 0.2rem 0;
+}
+
+/* Projetcs */
+
+.tag-project i {
+    font-size: 1.7rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+/* tecnologias */
+
+
+.div-tech .tecno {
+    display: flex;
+    gap: 0.5em;
+    text-align: center;
+}
+.tecno {
+    text-align: center;
+}
+.tecno p {
+    border: 1px solid #757575;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.tecno p:hover {
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+.button-project {
+    margin-top: 1.8rem;
+}
+.button-project a {
+    color: var(--color-white);
+    background-color: var(--color-destaque1);
+    padding: 1em;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.button-project a:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-destaque1);
+    color: var(--color-destaque1);
+    font-weight: 700;
 }
