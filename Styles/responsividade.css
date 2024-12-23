@@ -48,7 +48,10 @@
 
     .complemento-sobre img {
         position: unset;
-        width: 100%;
+        width: 75%;
+    }
+    .imagem-sobre img {
+        width: 50%;
     }
 
     /************************** SERVIÇOS ***/
@@ -75,7 +78,7 @@
         font-size: 1.4rem;
     }
 
-    /************************** PORTFOLIO ***/
+    /***** PORTFOLIO ***/
 
     .container-portfolio {
         gap: 2rem;
