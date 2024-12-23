@@ -107,7 +107,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: var(--font-pequena);
-    overflow-x: hidden;
+
     -webkit-overflow-scrolling: touch;
     transition: transform 0.3s ease-out;
 }
@@ -678,7 +678,6 @@ header.scrolled {
 
 /*************** SKILLS *****/
 .skills {
-
     padding: 7rem 1rem;
     display: flex;
     align-items: center;
@@ -749,9 +748,11 @@ header.scrolled {
     line-height: 1.4;
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
     .conteudo-skills {
         grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
     }
     .titulo-inicio p {
         font-size: 0.6em;
@@ -760,6 +761,23 @@ header.scrolled {
     .logo h1 {
         font-size: 1.6em;
     }
+    .skills {
+        padding: 7rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-skills {
+        width: 80%;
+        margin: auto;
+    }
+    .text-headline-skills h2 {
+        font-size: 2rem;
+    }
+    .headline-portfolio .titulo {
+        font-size: 2rem;
+    }
+    
 }
 
 @media (min-width: 900px) {
