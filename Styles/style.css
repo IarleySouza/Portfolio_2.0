@@ -107,7 +107,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: var(--font-pequena);
-
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     transition: transform 0.3s ease-out;
 }
@@ -1009,9 +1009,6 @@ header.scrolled {
     align-items: center;
     justify-content: center;
     transition: opacity 1s ease-in-out;
-    position: absolute;
-    top: 0;
-    left: 0;
     opacity: 0;
 }
 
@@ -1160,19 +1157,27 @@ header.scrolled {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    padding: 2rem 0rem 2rem 3rem;
+    padding: 5rem 0rem 2rem 3rem;
 }
 
-.formulario-contato h2 {
+.conteudo-contato h2 {
     font-size: 2rem;
     color: var(--color-white);
 }
 
-.formulario-contato p {
+.conteudo-contato p {
     font-size: 1.5rem;
     color: var(--color-gray1);
     font-weight: 500;
     line-height: 1.4;
+}
+.h2-contacts {
+    color: var(--color-white);
+}
+.o-contacts {
+    color: var(--color-destaque1);
+    font-weight: 700;
+    margin-top: 50px;
 }
 
 .form {
@@ -1347,6 +1352,7 @@ header.scrolled {
     display: flex;
     gap: 0.5em;
     text-align: center;
+    flex-wrap: wrap;
 }
 .tecno {
     text-align: center;
@@ -1356,6 +1362,7 @@ header.scrolled {
     text-align: center;
     padding: 5px;
     border-radius: 10px;
+    color: var(--color-gray2);
 }
 .tecno p:hover {
     color: var(--color-white);

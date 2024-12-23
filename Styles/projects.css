@@ -135,52 +135,6 @@
     margin-bottom: 1rem;
 }
 
-/* Seção de tags e botão */
-.cta-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: auto;
-}
-
-.tag-project {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.tag-project i {
-    font-size: 1.5rem;
-    color: var(--color-white);
-    transition: color 0.3s ease;
-}
-
-/* Efeito de hover nos ícones */
-.tag-project i:hover.fa-html5 {
-    color: #e34c26;
-}
-
-.tag-project i:hover.fa-css3-alt {
-    color: #1572B6;
-}
-
-.tag-project i:hover.fa-js {
-    color: #F7DF1E;
-}
-
-.tag-project i:hover.fa-bootstrap {
-    color: #7952B3;
-}
-
-.tag-project i:hover.fa-wordpress {
-    color: #21759B;
-}
-
-.tag-project i:hover.fa-wix {
-    color: #8c8c8c;
-}
 
 .btn-project a {
     display: block;
