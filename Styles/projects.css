@@ -81,7 +81,7 @@
     background-color: var(--white);
     border-radius: 25px;
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +93,7 @@
     height: 100%;
     object-fit: contain;
     display: block;
+    filter: drop-shadow(2px 2px 20px cyan);
 }
 
 /* Conteúdo do card */
@@ -150,6 +151,7 @@
     background-color: transparent;
     border: 1px solid var(--color-destaque1);
 }
+
 @keyframes puls {
     0% {
         transform: scale(1);
