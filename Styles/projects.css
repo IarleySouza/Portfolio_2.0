@@ -4,6 +4,7 @@
     --color-white: #f6f6f6;
     --color-destaque1: #FF5800;
 }
+
 .div-princ {
     width: 100%;
 }
@@ -16,6 +17,7 @@
     align-items: center;
     padding-bottom: 2rem;
 }
+
 .headline {
     width: 100%;
     padding: 1.5rem 0rem 1.5rem 0rem;
@@ -24,16 +26,18 @@
     justify-content: center;
     align-items: center;
 }
+
 .headline a {
-    color: #fff ;
+    color: #fff;
 }
+
 .headline a:hover {
     color: #dbdbdb;
 }
 
 .headline h1 {
     font-size: 2rem;
-    color:var(--color-destaque1);
+    color: var(--color-destaque1);
 }
 
 .container-projects {
@@ -155,12 +159,75 @@
 @keyframes puls {
     0% {
         transform: scale(1);
-        
+
     }
+
     50% {
         transform: scale(1.02);
     }
+
     100% {
         transform: scale(1);
+    }
+}
+
+.tecn {
+    display: flex;
+    gap: 0.5em;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.tecn p {
+    border: 1px solid;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--color-white);
+}
+
+.text-project span {
+    color: var(--color-destaque1);
+    font-weight: 700;
+}
+
+.button-projects {
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.button-projects a {
+    color: var(--color-white);
+    background-color: var(--color-destaque1);
+    padding: 1em;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-projects a:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-destaque1);
+    color: var(--color-destaque1);
+    font-weight: 700;
+}
+
+
+@media (width <=500px) {
+    .tecn p {
+        font-size: 11px;
+        color: #fff;
+    }
+
+    .text-project p {
+        font-size: 13px;
+    }
+
+    .text-project h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .button-projects a {
+        font-size: 13px;
     }
 }
