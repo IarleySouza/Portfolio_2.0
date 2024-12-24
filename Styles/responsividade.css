@@ -8,10 +8,10 @@
         font-size: 1.5em;
     }
 
-    /************************** SOBRE ***/
+    /******** SOBRE ***/
     .sobre {
         height: auto;
-        padding:  4em 1.5em;
+        padding: 0;
     }
     .bnt {
         padding: 0.7rem 1.6rem;
@@ -31,6 +31,7 @@
         flex-direction: column-reverse;
         height: auto;
         gap: 3rem;
+        padding:  4em 1.5em;
     }
 
     .left-sobre {
