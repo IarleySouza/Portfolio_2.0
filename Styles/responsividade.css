@@ -25,6 +25,9 @@
         height: auto;
         gap: 3rem;
     }
+    html, body {
+        overflow-x: hidden;
+    }
 
     .left-sobre {
         width: 100%;
