@@ -16,6 +16,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        /* outline: 1px solid red */
     }
 
 
@@ -764,15 +765,14 @@
         line-height: 1.4;
     }
 
-    @media (width <=500px) {
+    @media (max-width: 500px) {
         .conteudo-skills {
-            grid-template-columns: repeat(2, 1fr);
+            
             display: flex;
             flex-direction: column;
         }
         html, body {
             overflow-x: hidden;
-            width: 100%;
         }
 
         .titulo-inicio p {
@@ -798,7 +798,7 @@
         }
 
         .text-headline-skills h2 {
-            font-size: 2rem;
+            font-size: 2em;
         }
 
         .headline-portfolio .titulo {
