@@ -16,7 +16,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-         /* outline: 1px solid red  */
     }
 
 
@@ -540,7 +539,7 @@
 
     .headline-sobre {
         height: 30%;
-        width: 100%;
+        width: 70vh;
         overflow: hidden;
         display: flex;
         align-items: center;
