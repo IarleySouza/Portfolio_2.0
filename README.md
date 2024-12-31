@@ -13,7 +13,7 @@
 
 1. **Clone o Repositório**
    ```bash
-   git clone link
+   git clone https://github.com/IarleySouza/Portfolio_2.0.git
    ```
 
 2. **Abra no seu editor de código (VS Code, Sublime, etc.).**
