@@ -12,3 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        const vinheta = document.getElementById("vinheta");
+        if (vinheta) vinheta.style.display = "none";
+    }, 3000); // Tempo de exibição (3 segundos)
+});
