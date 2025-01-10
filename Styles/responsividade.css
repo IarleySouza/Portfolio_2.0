@@ -61,7 +61,7 @@
         width: 75%;
     }
     .imagem-sobre img {
-        width: 80%;
+        width: 100%;
     }
 
     /************************** SERVIÇOS ***/
@@ -117,7 +117,7 @@
     }
     .textos-sobre h1 {
         font-size: 20px;
-        width: 100%;
+        width: 95%;
         margin-top: 10px;
     }
     .textos-sobre p {

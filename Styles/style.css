@@ -604,7 +604,7 @@
     .left-sobre {
         color: var(--color-white);
         height: 100%;
-        width: 90%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -616,6 +616,7 @@
         font-size: 2em;
         width: 60%;
     }
+
 
     .textos-sobre p {
         font-size: 1em;
@@ -659,7 +660,7 @@
         display: flex;
         justify-content: right;
         align-items: center;
-        position: absolute;
+        position: absolute; 
     }
     .complemento-sobre {
         width: auto;
@@ -686,7 +687,7 @@
     }
 
     .imagem-sobre img {
-        width: 90%;
+        width: 100%;
         z-index: 99;
         border-radius: 50%;
     }
