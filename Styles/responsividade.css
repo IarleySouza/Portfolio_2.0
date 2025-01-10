@@ -30,8 +30,9 @@
     .conteudo-sobre {
         flex-direction: column-reverse;
         height: auto;
-        gap: 3rem;
-        padding:  4em 1.5em;
+        gap: 0;
+        padding:  1.5em;
+
     }
 
     .left-sobre {
@@ -46,6 +47,7 @@
 
     .imagem-sobre {
         justify-content: center;
+        position: relative;
     }
 
     .complemento-sobre {
@@ -59,7 +61,7 @@
         width: 75%;
     }
     .imagem-sobre img {
-        width: 50%;
+        width: 80%;
     }
 
     /************************** SERVIÇOS ***/
