@@ -77,6 +77,7 @@
         --color-white: #f6f6f6;
         --color-destaque1: #FF5800;
         --color-destaque2: #728e6f;
+        --principal: #2a5f6b;
     }
 
     /* Estilizando a barra de rolagem */
@@ -103,7 +104,7 @@
     }
 
     body {
-        background-color: #2a5f6b;
+        background-color: var(--principal);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -163,12 +164,13 @@
 
     .bnt {
         margin-top: 30px;
+        margin-right: 20px;
         padding: 1rem 1.6rem;
         cursor: pointer;
-        border: none;
         outline: none;
-        border-radius: 10px;
+        border-radius: 8px;
         background-color: #007bff;
+        border: 2px solid #007bff;
         color: var(--color-white);
         font-size: 1.2rem;
         transition: background-color 0.3s, transform 0.3s;
@@ -195,6 +197,26 @@
     .bnt-2:hover {
         background-color: #FF5800;
         animation: 1s all;
+    }
+
+    .bntt-3 {
+        margin-top: 30px;
+        padding: 1.1rem 1.6rem;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        background-color: #25545f;
+        color: var(--color-white);
+        font-size: 1.2rem;
+        font-weight: 700;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .bntt-3:hover {
+        background-color: #fff;
+        transition: background-color 0.3s, transform 0.3s;
+        transform: translateY(-5px);
+        color: var(--color-black);
     }
 
     @keyframes pulse {
@@ -603,6 +625,28 @@
         height: auto;
         display: flex;
     }
+    .redes-connect {
+        margin-top: 5px;
+        color: #fff;
+    }
+    .redes-principall {
+        display: flex;
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .redes-principall div {
+        display: flex;
+        gap: 10px;
+    }
+    .redes-principall div img {
+        transition: transform 0.3s ease;
+    }
+    .redes-principall div img:hover {
+        cursor: pointer;
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+    }
 
     .destaque-quemsoueu {
         color: #FF5800;
@@ -626,10 +670,11 @@
     }
 
 
-    .textos-sobre p {
+    .textos-sobre .txt-p {
         font-size: 1em;
         color: var(--color-gray2);
         font-weight: 500;
+        margin-top: 10px;
         line-height: 1.5;
         letter-spacing: 1.5px;
         width: 80%;
@@ -669,6 +714,8 @@
         justify-content: right;
         align-items: center;
         position: absolute; 
+        width: 100%;
+        
     }
     .complemento-sobre {
         width: auto;
@@ -695,9 +742,18 @@
     }
 
     .imagem-sobre img {
+        position: relative;
         width: 100%;
         z-index: 99;
-        border-radius: 50%;
+        animation: subir 1s infinite alternate;
+    }
+    @keyframes subir {
+        from {
+            transform: translateY(20px);    
+        }
+        to {
+            transform: translateY(0); 
+        }
     }
 
     /*************** SKILLS *****/
@@ -710,6 +766,7 @@
 
     .container-skills {
         width: 100%;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
