@@ -650,6 +650,13 @@
         transform: translateY(-5px);
         transition: transform 0.3s ease;
     }
+    .aa-pp img {
+        transition: transform 0.5s ease;
+    }
+    .aa-pp img:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+    }
 
     .destaque-quemsoueu {
         color: #FF5800;
@@ -1143,6 +1150,11 @@
         flex-direction: column;
     }
 
+    .part-projects-but {
+        display: flex;
+        gap: 10px;
+        
+    }
     .conteudo-textos-case h1 {
         color: var(--color-white);
         font-size: 1.5em;
@@ -1480,6 +1492,12 @@
         border: 1px solid var(--color-destaque1);
         color: var(--color-destaque1);
         font-weight: 700;
+    }
+    .aa-pp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
     }
 
 
