@@ -1,4 +1,4 @@
-    @font-face {
+@font-face {
         font-family: 'Poppins';
         src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
         font-weight: 400;
@@ -1635,7 +1635,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #2a5f6b;
+        background-color: #0a323b;
         /* Cor de fundo */
         display: flex;
         justify-content: center;
@@ -1650,14 +1650,14 @@
         color: var(--color-white);
         border-radius: 20px;
         padding: 5px;
-        border: 1px solid #f6f6f680;
+        border: 0.5px solid #f6f6f680;
         background-color: rgba(255, 255, 255, 0.11);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(20px);
         white-space: nowrap;
         overflow: hidden;
         display: inline-block;
-        animation: typing 2.5s steps(300, end) forwards;
+        animation: typing 2.2s steps(300, end) forwards;
     }
 
     @keyframes typing {
@@ -1666,14 +1666,14 @@
         }
 
         to {
-            width: 13.5%;
+            width: 10%;
         }
     }
 
     .vinheta-titulo {
         color: #fff;
-        font-size: 2.5rem;
-        animation: slideIn 1.5s ease;
+        font-size: 2.2rem;
+        animation: slideIn 1s ease;
     }
 
     .columamn {
@@ -1690,7 +1690,7 @@
 
         to {
             transform: translateY(0);
-            opacity: 1;
+            opacity: 0;
         }
     }
 
@@ -1699,4 +1699,11 @@
             opacity: 0;
             visibility: hidden;
         }
+    }
+
+    .vinheta-typed {
+        font-family: 'Poppins', monospace, sans-serif;
+        font-size: 1.3em;
+        letter-spacing: 1px;
+        color: #fff;
     }
